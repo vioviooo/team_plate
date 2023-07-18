@@ -19,6 +19,7 @@ double __speedstart__;
 #define SPEEDTEST_START __speedstart__ = clock();
 #define SPEEDTEST_STOP printf("Process finished in: "); printf("%f", (double)(clock() - __speedstart__)/CLOCKS_PER_SEC); printf(" seconds");
 
+
 void solve()
 {
     // let's go kid

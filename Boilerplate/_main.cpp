@@ -14,6 +14,7 @@ const double PI = acos(-1.0);
 double __speedstart__;
 #define SPEEDTEST_START __speedstart__ = clock();
 #define SPEEDTEST_STOP cout << "Process finished in: " << (double)(clock() - __speedstart__)/CLOCKS_PER_SEC << " seconds";
+#define fastboi ios::sync_with_stdio(false); cin.tie(0);
 
 void solve()
 {
@@ -23,8 +24,7 @@ int main()
 {
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
-    ios::sync_with_stdio(false);
-    cin.tie(NULL);
+    fastboi
 
     SPEEDTEST_START
     solve();
