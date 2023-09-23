@@ -18,7 +18,9 @@ ll binpow(ll a, ll n) {
 //Проверка на простоту банальная, кринж такое писать
 bool check_prime(ll n) {
     bool OK = true;
-    for (ll i = 2; i < sqrt(n) + 1; i++) {
+    if (n % 2 == 0) 
+        return false;
+    for (ll i = 3; i < sqrt(n) + 1; i+= 2) {
         if (n % i == 0) OK = false;
     }
     return OK;
